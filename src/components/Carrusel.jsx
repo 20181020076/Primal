@@ -49,11 +49,11 @@ const Carrusel = () => {
       </div>
     </div>
   </div>
-  <button className="carousel-control-prev d-none" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev" >
-    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+  <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev" >
+    <span className="carousel-control-prev-icon d-none" aria-hidden="true"></span>
   </button>
-  <button className="carousel-control-next d-none" type="button" data-bs-target="#carouselExampleCaptions"  data-bs-slide="next">
-    <span className="carousel-control-next-icon" aria-hidden="true" ></span>
+  <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"  data-bs-slide="next">
+    <span className="carousel-control-next-icon d-none" aria-hidden="true" ></span>
     
   </button>
 </div> 
