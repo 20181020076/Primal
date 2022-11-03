@@ -3,4 +3,18 @@
     img{
         height: 233px;;
     }
+    &-indicators{
+        img{
+          height: 10px;  
+        }
+        
+    }
+}
+#carouselExampleCaptions{
+    button{
+        width: 10px;
+        height: 10px;
+        border-radius: 100%; 
+    }
+    
 }

@@ -1,21 +1,29 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {faCartShopping,faBars,faMagnifyingGlass} from '@fortawesome/free-solid-svg-icons'
-import {} from '@fortawesome/free-regular-svg-icons'
+import React, { useState } from 'react'
+import BurguerButton from './BurguerButton'
 
-const NavBar = () => {
+
+function NavBar() {
+
+  const [clicked, setClicked] = useState(false)
+  const handleClick = () => {
+    //cuando esta true lo pasa a false y vice versa
+    setClicked(!clicked)
+  }
   return (
-    <div className="navbar">
-        <div className="navbar__menu">
-            <FontAwesomeIcon icon={faBars}/>
+      <div className='NavContainer'>
+        <h2>Navbar <span>Responsive</span></h2>
+        <div className={`links ${clicked ? 'active' : ''}`}>
+          <a onClick={handleClick} href="#h">Home</a>
+          <a onClick={handleClick} href="#h">Shop</a>
+          <a onClick={handleClick} href="#h">About</a>
+          <a onClick={handleClick} href="#h">Contact</a>
+          <a onClick={handleClick} href="#h">Blog</a>
         </div>
-        <div className="navbar__serch">
-            <FontAwesomeIcon icon={faMagnifyingGlass}/>
+        <div className='burguer'>
+          <BurguerButton clicked={clicked} handleClick={handleClick} />
         </div>
-        <div className="navbar__logo">PRIMAL</div>
-        <div className="navbar__cart">
-          <FontAwesomeIcon icon={faCartShopping} />
-        </div>
-    </div>
+        <div className={`BgDiv initial ${clicked ? ' active' : ''}`}></div>
+      </div>
   )
 }
 

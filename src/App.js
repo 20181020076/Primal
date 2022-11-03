@@ -7,7 +7,7 @@ function App() {
     <div className="App">
       <header>
         <NavBar/>
-        <Carrusel/>
+        {/* <Carrusel/> */}
       </header>
     </div>
   );
