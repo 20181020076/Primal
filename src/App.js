@@ -1,6 +1,6 @@
 
 import NavBar from './components/NavBar';
-import Carrusel from './components/Carrusel';
+// import Carrusel from './components/Carrusel';
 
 function App() {
   return (
