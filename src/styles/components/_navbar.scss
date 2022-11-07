@@ -1,9 +1,11 @@
 .NavContainer{
     h2{
+        margin-left: 25px;
         color: white;
         font-weight: 400;
+        font-weight: bold;
         span{
-          font-weight: bold;
+          font-weight:initial;
         }
       }
       padding: .4rem;
@@ -33,6 +35,7 @@
         @media(min-width: 768px){
           position: initial;
           margin: 0;
+          margin-left: 300px;
           a{
             font-size: 1rem;
             color: white;
